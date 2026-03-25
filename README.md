@@ -2,7 +2,7 @@
 
 ## Project Introduction
 
-This study proposes a terrain-guided dual-stream physics-constrained reconstruction framework for efficiently enhancing low-resolution water depth simulation results to high-resolution products. This framework employs parallel feature pathways to separately encode low-resolution water depth and high-resolution terrain information, and introduces cross-modal spatial attention to strengthen the modulation effect of terrain control regions on the reconstruction process; simultaneously, through physical soft constraints such as gradient consistency, water surface continuity, and local smoothness, it guides the output results to converge toward more reasonable hydrodynamic feasible domains.
+This study proposes a terrain-guided dual-stream physics-constrained reconstruction framework for efficiently enhancing low-resolution water depth simulation results to high-resolution products. This framework employs parallel feature pathways to separately encode low-resolution water depth and high-resolution terrain information, and introduces cross-modal spatial attention to strengthen the modulation effect of terrain control regions on the reconstruction process; simultaneously, through physical soft constraints such as gradient consistency, water surface continuity, and local smoothness, it guides output results to converge toward more reasonable hydrodynamic feasible domains.
 
 ## Key Features
 
@@ -72,7 +72,7 @@ See `environment.yml` for reference
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/DDS-SR.git
+git clone https://github.com/2583480982/DDS-SR-MODEL.git
 cd DDS-SR
 
 # Create and install environment
@@ -80,6 +80,8 @@ conda env create -f environment.yml
 ```
 
 ## Data Preparation
+
+Data download: https://figshare.com/s/4120b00a33749407fab9
 
 Training data requires the following folders:
 
@@ -132,45 +134,6 @@ python PLO_box.py
 python plot_box2.py
 ```
 
-## Training Configuration
-
-Main hyperparameters are configured in `DDS-SR-modularization/config.py`:
-
-```python
-# Learning rate configuration
-INITIAL_LR = 1e-4
-MIN_LR = 1e-6
-WARMUP_EPOCHS = 5
-
-# Training parameters
-TOTAL_EPOCHS = 50
-BATCH_SIZE = 8
-STEPS_PER_EPOCH = 100
-
-# Physics constraint weights
-GRAD_LOSS_WEIGHT = 0.1
-SMOOTH_LOSS_WEIGHT = 0.01
-SURFACE_LOSS_WEIGHT = 0.1
-```
-
-## Model Performance
-
-Performance on test set:
-
-| Model | PSNR (dB) | SSIM | RMSE (m) | MAE (m) |
-|--------|-------------|--------|------------|-----------|
-| LR (Baseline) | - | - | - | - |
-| FLO-SR | - | - | - | - |
-| UNet-SR | - | - | - | - |
-| DDS-SR | - | - | - | - |
-
-## Ablation Study
-
-| Model Variant | PSNR (dB) | SSIM | Description |
-|--------------|-------------|--------|-------------|
-| DDS-No-Physics | - | - | Without physics constraints |
-| DDS-SR | - | - | Full model |
-
 ## Citation
 
 If you use this code in your research, please cite:
@@ -193,7 +156,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or suggestions, please contact via:
 
 - Email: jq.xiao@hhu.edu.cn
-- GitHub Issues: https://github.com/yourusername/DDS-SR/issues
+- GitHub Issues: https://github.com/2583480982/DDS-SR-MODEL/issues
 
 ## Acknowledgments
 
@@ -205,7 +168,7 @@ We thank all researchers and developers who have contributed to this project.
 - Initial release
 - Implementation of DDS-SR core model
 - Provided training and inference scripts
-- Added comparison models (FLO-SR, UNet-SR, SRGAN)
+- Added comparison models (FLO-SR (https://github.com/cyber-hydrology/FLO-SR-flood-super-resolution-model.git), UNet-SR)
 - Implemented ablation study functionality
 
 ---
