@@ -139,11 +139,11 @@ python plot_box2.py
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{your_paper_2025,
-  title={Terrain-Guided Dual-Stream Physics-Constrained Water Depth Super-Resolution Reconstruction},
-  author={Your Name},
+@article{xxxx_2026,
+  title={xxxxxx},
+  author={Jiaqing Xiao, Shi Pengfei},
   journal={Journal Name},
-  year={2025}
+  year={2026}
 }
 ```
 
