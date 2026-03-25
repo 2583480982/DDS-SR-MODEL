@@ -1,7 +1,9 @@
 # DDS-SR: Terrain-Guided Dual-Stream Physics-Constrained Water Depth Super-Resolution Model
 
 ## Project Introduction
-<img width="600" height="800" alt="Fig2_Model_05" src="https://github.com/user-attachments/assets/2a5f8f3e-927b-4fbd-b8e7-682b39853af4" />
+<div align="center">
+<img width="300" alt="Fig2_Model_05" src="https://github.com/user-attachments/assets/2a5f8f3e-927b-4fbd-b8e7-682b39853af4" />
+</div>
 
 This study proposes a terrain-guided dual-stream physics-constrained reconstruction framework for efficiently enhancing low-resolution water depth simulation results to high-resolution products. This framework employs parallel feature pathways to separately encode low-resolution water depth and high-resolution terrain information, and introduces cross-modal spatial attention to strengthen the modulation effect of terrain control regions on the reconstruction process; simultaneously, through physical soft constraints such as gradient consistency, water surface continuity, and local smoothness, it guides output results to converge toward more reasonable hydrodynamic feasible domains.
 
