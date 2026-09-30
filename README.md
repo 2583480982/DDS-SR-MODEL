@@ -163,7 +163,7 @@ For questions or suggestions, please contact via:
 
 ## Acknowledgments
 
-We thank all researchers and developers who have contributed to this project.
+We thank all researchers and developers who have contributed to this project. Some of the code involves confidential information from project collaborations. Please contact the author to obtain it.(Email: jq.xiao@hhu.edu.cn)
 
 ## Changelog
 
